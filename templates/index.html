@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Spam Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Spam Email Detector</h1>
+
+    <textarea id="message" placeholder="Enter your email message here..."></textarea>
+
+    <button onclick="checkSpam()">Check</button>
+
+    <h2 id="result"></h2>
+
+    <p class="footer">Created by Narendra Krishnan K.S. (AIML)</p>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
